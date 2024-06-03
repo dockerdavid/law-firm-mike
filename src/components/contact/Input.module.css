@@ -1,0 +1,11 @@
+.text {
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 12px;
+    color: white;
+    background: transparent;
+}
+
+.text::placeholder {
+    color: white;
+}

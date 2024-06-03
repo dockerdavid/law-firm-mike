@@ -1,0 +1,40 @@
+span {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  background-color: var(--brown);
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-direction: column;
+  padding: 8px 12px;
+}
+
+.block {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.text {
+  color: white;
+  font-size: .9rem;
+}
+
+@media screen and (min-width: 665px) {
+    .container {
+        flex-direction: row;
+        gap: 16px;
+        padding: 16px 24px;
+        justify-content: flex-end;
+    }
+
+    .text {
+        font-size: .8rem;
+    }
+    
+}

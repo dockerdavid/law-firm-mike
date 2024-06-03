@@ -1,0 +1,52 @@
+a {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+.container {
+  display: flex;
+  padding: 15px 20px;
+  background-color: var(--black);
+  flex-direction: column;
+  gap: 10px;
+}
+
+.imgContainer {
+  height: 140px;
+  object-fit: contain;
+}
+
+.urlContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.urlContainer a {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 665px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+  }
+
+  .urlContainer {
+    gap: 18px;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}

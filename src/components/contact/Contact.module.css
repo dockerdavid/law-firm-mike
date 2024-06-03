@@ -1,0 +1,79 @@
+.title {
+  color: white;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+  padding: 2.5%;
+  color: white;
+  background-color: var(--bone);
+}
+
+.contactContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(rgba(163, 123, 77, 0.9), rgba(163, 123, 77, 0.9)),
+    url("/contact/contact_back.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 15px;
+  gap: 8px;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.businessContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageContainer {
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 665px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 15px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    padding: 3% 6%;
+  }
+
+  .contactContainer {
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .formContainer {
+    gap: 20px;
+  }
+
+  .businessContainer {
+    gap: 20px;
+  }
+
+  .imageContainer {
+    width: 100%;
+    height: 100%;
+  }
+}

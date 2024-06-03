@@ -1,0 +1,122 @@
+h2 {
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
+p {
+  font-weight: 100;
+  font-size: .8rem;
+}
+
+span {
+}
+
+.container {
+  display: flex;
+  position: relative;
+  border: 1px solid var(--brown);
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  padding: 45px;
+}
+
+.backgroundContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: black;
+}
+
+.imgContainer {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0px 20px;
+  margin: 0px 0px 0px 0px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.title {
+  color: var(--gold);
+  font-size: 1.9rem;
+  font-weight: 100;
+}
+
+.description {
+  color: white;
+  font-size: 2rem;
+}
+
+.cardsContainer {
+  justify-self: center;
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  justify-items: center;
+  gap: 20px;
+  padding: 20px;
+  z-index: 1;
+}
+
+.card {
+  gap: 8px;
+  border-radius: 5px;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 300px;
+  min-width: 5px;
+  aspect-ratio: 1;
+  align-items: center;
+  background-color: white;
+  text-align: center;
+  border: 1.2px solid var(--gold);
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  aspect-ratio: 1;
+  background-color: var(--gold);
+  clip-path: polygon(98.66025% 45%, 99.39693% 46.5798%, 99.84808% 48.26352%, 100% 50%, 99.84808% 51.73648%, 99.39693% 53.4202%, 98.66025% 55%, 78.66025% 89.64102%, 77.66044% 91.06889%, 76.42788% 92.30146%, 75% 93.30127%, 73.4202% 94.03794%, 71.73648% 94.48909%, 70% 94.64102%, 30% 94.64102%, 28.26352% 94.48909%, 26.5798% 94.03794%, 25% 93.30127%, 23.57212% 92.30146%, 22.33956% 91.06889%, 21.33975% 89.64102%, 1.33975% 55%, 0.60307% 53.4202%, 0.15192% 51.73648%, 0% 50%, 0.15192% 48.26352%, 0.60307% 46.5798%, 1.33975% 45%, 21.33975% 10.35898%, 22.33956% 8.93111%, 23.57212% 7.69854%, 25% 6.69873%, 26.5798% 5.96206%, 28.26352% 5.51091%, 30% 5.35898%, 70% 5.35898%, 71.73648% 5.51091%, 73.4202% 5.96206%, 75% 6.69873%, 76.42788% 7.69854%, 77.66044% 8.93111%, 78.66025% 10.35898%)
+}
+
+@media screen and (min-width: 665px) {
+  .cardsContainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .card {
+    max-width: 315px;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .cardsContainer {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .card {
+    max-width: 250px;
+  }
+}

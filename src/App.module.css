@@ -1,0 +1,22 @@
+:root {
+  --brown: #1f1400;
+  --gold: #a37b4d;
+  --black: #222224;
+  --yellow: #ffe867;
+  --bone: #F2F3F9;
+  --eggshell: #f9f7f7;
+  --menu: #fef7e5
+}
+
+* {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}

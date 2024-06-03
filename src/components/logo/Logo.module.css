@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    height: 115px;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+}
+
+.imgContainer {
+    height: 115px;
+    object-fit: contain;
+}

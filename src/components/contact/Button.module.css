@@ -1,0 +1,15 @@
+.button {
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 12px;
+    color: var(--gold);
+}
+
+.buttonDisabled {
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 12px;
+    color: rgba(163, 123, 77, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
+    cursor: not-allowed;
+}
