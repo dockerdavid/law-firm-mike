@@ -116,7 +116,7 @@ const ContactComponent = () => {
             value={form.message}
           />
           <ReCAPTCHA
-            sitekey=""
+            sitekey={process.env.REACT_APP_CAPTCHA!}
             onChange={onChange}
             onExpired={onExpired}
           />
